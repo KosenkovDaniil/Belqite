@@ -1,0 +1,688 @@
+/* ОБЩИЕ НАСТРОЙКИ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f6f6f6;
+  color: #1c1c1c;
+}
+/* ШАПКА И МЕНЮ  */
+.header {
+  width: 100%;
+  background-color: #ff7723;
+  border-bottom: 5px solid #1c1c1c;
+}
+/* контейнер внутри шапки */
+.header-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 10px 0px;
+}
+
+/* навигация по сайту */
+.main-nav {
+  width: 100%;
+}
+/* список ссылок меню */
+.main-menu {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+/* ссылка в пункте меню */
+.main-menu-link {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: #1c1c1c;
+  padding: 4px 0;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+/* hover по ссылке меню */
+.main-menu-link:hover {
+  color: #ffffff;
+}
+
+/* ОСНОВНОЙ КОНТЕНТч */
+
+/* контейнер всей страницы под шапкой */
+.page-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 290px 0 40px; /* 🔸 справа 60px, слева 40px */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* главный заголовок страницы */
+.page-title {
+  font-size: 35px;
+  margin-bottom: 20px;
+  color: #ff7723;
+}
+
+/* =========================================================
+   НАВИГАЦИЯ ПО СТРАНИЦЕ (внутри контента)
+   ========================================================= */
+
+/* блок с "Навигация по странице" */
+.page-nav {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+/* текст "Навигация по странице:" */
+.page-nav-text {
+  font-weight: 500;
+  margin-right: 8px;
+}
+
+/* ссылки внутри блока навигации */
+.page-nav-link {
+  color: #1c1c1c;
+  text-decoration: none;
+  margin: 0 4px;
+}
+
+/* hover по ссылке навигации */
+.page-nav-link:hover {
+  text-decoration: underline;
+}
+
+/* разделитель "·" между ссылками */
+.page-nav-sep {
+  margin: 0 4px;
+  color: #777777;
+}
+
+/* ЗАГОЛОВКИ И ТЕКСТ */
+/* заголовки разделов */
+.section-title {
+  font-size: 22px;
+  margin-top: 33px;
+  margin-bottom: 10px;
+}
+
+/* обычный абзац текста */
+.section-text {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 14px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* пометка/примечание (маленький текст) */
+.section-text.note {
+  font-size: 13px;
+  color: #555555;
+}
+
+/* заголовок под-раздела (например "Ненумерованный список") */
+.sub-title {
+  font-size: 18px;
+  margin-top: 33px;
+  margin-bottom: 8px;
+}
+
+/* =========================================================
+   СПИСКИ
+   ========================================================= */
+
+/* базовый стиль для всех списков */
+.list {
+  font-size: 15px;
+  line-height: 1.5;
+  margin-left: 20px;
+  margin-bottom: 16px;
+}
+
+/* ненумерованный список */
+.list-unordered {
+  list-style-type: disc;
+}
+
+/* нумерованный список */
+.list-ordered {
+  list-style-type: decimal;
+}
+
+/* верхний уровень вложенного списка */
+.list-nested {
+  list-style-type: disc;
+}
+
+/* внутренний ul внутри вложенного списка */
+.list-inner {
+  list-style-type: circle;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+/* один элемент списка */
+.list-item {
+  margin-bottom: 4px;
+}
+
+/* ё
+   МИНИАТЮРА */
+/* ссылка вокруг миниатюры */
+.thumb-link {
+  display: inline-block;
+  margin-top: 15px;
+}
+/* сама миниатюра */
+.thumb-image {
+  display: block;
+  border: 2px solid #ff7723;
+  border-radius: 6px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.thumb-image2 {
+  display: block;
+  border: 2px solid #ff7723;
+  border-radius: 6px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 500px;
+  height: 380px;
+}
+/* hover по миниатюре */
+.thumb-image:hover {
+  transform: scale(1.2);
+}
+/* hover по миниатюре */
+.thumb-image2:hover {
+  transform: scale(1.5);
+}
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/* БЛОК С ТАБЛИЦЕЙ (СТРАНИЦА "ИНФОРМАЦИЯ")*/
+/* обёртка вокруг таблицы, чтобы она не липла к другим блокам */
+.table-block {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  overflow-x: auto; /* на всякий случай, если будет много колонок */
+}
+/* сама таблица */
+.info-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid #1c1c1c;
+  background: url('img/table_bg.jpg') center / cover no-repeat;
+}
+.info-table th,
+.info-table td {
+  border: 2px solid #1c1c1c; /* рамка у каждой ячейки */
+  padding: 12px 16px;
+}
+/* заголовки колонок */
+.info-table-head {
+  font-size: 15px;
+  font-weight: 600;
+  text-align: left;
+  padding: 12px 16px;
+  border-bottom: 2px solid #1c1c1c;
+  background-color: rgba(246, 246, 246, 0.9);
+}
+/* обычная ячейка таблицы */
+.info-table-cell {
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 12px 16px;
+  border-bottom: 1px solid #dddddd;
+  vertical-align: top;
+  color: #1c1c1c;
+}
+/* ячейка с картинкой (QR) */
+.image-cell {
+  text-align: center;
+  width: 140px;
+}
+/* ячейка со ссылкой */
+.link-cell {
+  width: 220px;
+}
+/* сам QR-код / картинка внутри ячейки */
+.cell-image {
+  display: inline-block;
+  border-radius: 10px;
+  border: 2px solid #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* небольшой эффект при наведении на QR */
+.cell-image:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+}
+
+/* ссылка в таблице */
+.table-link {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1c1c1c;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+/* hover по ссылке */
+.table-link:hover {
+  color: #1c1c1c;
+  border-color: #ff7723;
+  border-bottom-width: 3px;
+}
+/* =========================================================
+   ФОРМА КОНТАКТОВ (СТРАНИЦА "КОНТАКТЫ")
+   ========================================================= */
+
+/* общая обёртка формы */
+.contact-form {
+  margin-top: 30px;
+  max-width: 600px; /* чтобы форма не растягивалась слишком широко */
+  display: flex;
+  flex-direction: column; /* всё вертикально в столбик */
+  gap: 16px; /* расстояние между блоками */
+}
+
+/* один блок "подпись + поле" */
+.form-group {
+  display: flex;
+  flex-direction: column; /* подпись сверху, поле снизу */
+  gap: 6px;
+}
+
+/* подпись к полю — делаем BALDOM :) */
+.form-label {
+  font-size: 14px;
+  font-weight: bold; /* жирный текст */
+  letter-spacing: 0.02em;
+}
+
+/* само поле ввода */
+.form-input {
+  padding: 8px 10px;
+  font-size: 14px;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  border: 2px solid #1c1c1c;
+  border-radius: 4px;
+  background-color: #ffffff;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.1s ease;
+}
+
+/* placeholder — чуть тише по цвету */
+.form-input::placeholder {
+  color: #888888;
+  font-size: 13px;
+}
+
+/* фокус по полю — аккуратный акцент */
+.form-input:focus {
+  border-color: #ff7723;
+  box-shadow: 0 0 0 2px rgba(255, 119, 35, 0.25);
+  transform: translateY(-1px);
+}
+
+/* блок с кнопкой */
+.form-actions {
+  margin-top: 10px;
+}
+
+/* кнопка отправки */
+.form-button {
+  display: inline-block;
+  padding: 10px 24px;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #1c1c1c;
+  background-color: #ff7723;
+  border: 3px solid #1c1c1c;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  transition: background-color 0.2s ease, transform 0.1s ease,
+    box-shadow 0.2s ease;
+}
+
+/* hover по кнопке */
+.form-button:hover {
+  background-color: #ff9b57;
+  box-shadow: 0 4px 0 #1c1c1c;
+  transform: translateY(-2px);
+}
+
+/* активное состояние (клик) */
+.form-button:active {
+  box-shadow: 0 1px 0 #1c1c1c;
+  transform: translateY(0);
+}
+/* =========================================================
+   ФОРМА ОТЗЫВА / ЗАКАЗА (СТРАНИЦА "ОТЗЫВЫ")
+   ========================================================= */
+
+/* общая обёртка формы с отзывом/заказом */
+.review-form {
+  margin-top: 30px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* fieldset с радио и чекбоксами */
+.form-fieldset {
+  border: 2px solid #1c1c1c;
+  border-radius: 4px;
+  padding: 12px 14px 10px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* заголовок внутри fieldset */
+.form-legend {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0 6px;
+}
+
+/* одна опция (radio или checkbox + текст) */
+.form-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+/* сами radio-кнопки */
+.form-radio {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  accent-color: #ff7723; /* цвет активной точки */
+}
+
+/* сами чекбоксы */
+.form-checkbox {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  accent-color: #ff7723; /* оранжевый чек */
+}
+
+/* АКТИВНЫЙ ПУНКТ МЕНЮ*/
+
+.main-menu-link.active {
+  color: #ffffff;
+  border-bottom: 3px solid #1c1c1c;
+}
+/* макет паспортной таблицы */
+.passport-table {
+  width: 425px;
+  background: url('img/fon_pasport.jpg') center / cover no-repeat;
+  border: none;
+}
+
+/* заголовок "Российская Федерация" */
+.passport-header {
+  text-align: center;
+  height: 50px;
+  font-weight: bold;
+}
+
+/* ячейка "Паспорт выдан" */
+.passport-issued {
+  vertical-align: top;
+  text-align: left;
+  height: 200px;
+}
+
+/* строка с местом выдачи */
+.passport-issued-place {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* маленькие правые ячейки с "1111" */
+.passport-small-cell {
+  text-align: center;
+}
+
+/* ячейка с датой выдачи */
+.passport-date {
+  vertical-align: top;
+  height: 200px;
+}
+
+/* ячейка с кодом подразделения */
+.passport-code {
+  vertical-align: top;
+  height: 200px;
+}
+
+/* пустая ячейка снизу слева */
+.passport-empty {
+  height: 200px;
+}
+
+/* подпись "Личный код" */
+.passport-label {
+  vertical-align: middle;
+}
+/* убираем линии только в таблице паспорта */
+.passport-table,
+.passport-table td,
+.passport-table th {
+  border: none !important;
+}
+/* =========================================================
+   НОВЫЙ МАКЕТ ПАСПОРТА (с кнопкой "Изменить язык")
+   ========================================================= */
+
+.passport-actions {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.passport-lang-btn {
+  margin: 0;
+}
+
+/* контейнер всего блока паспорта */
+.passport-container {
+  position: relative;
+  width: 800px;
+  max-width: 100%;
+  margin: 0 auto 40px;
+}
+
+/* фон паспорта */
+.passport-bg-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 3px solid #1c1c1c;
+  border-radius: 4px;
+}
+
+/* фото владельца */
+.passport-photo {
+  position: absolute;
+  top: 636px;
+  left: 48px;
+  width: 200px;
+  height: 260px;
+  object-fit: cover;
+  border: 3px solid #1c1c1c;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+/* слой с текстом поверх фона */
+.passport-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/* общий стиль текста паспорта */
+.passport-text {
+  position: absolute;
+  margin: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 18px;
+  color: #1c1c1c;
+}
+
+/* пробел между датой и кодом */
+.passport-space {
+  display: inline-block;
+  width: 120px;
+}
+
+.passport-line-issuer1 {
+  top: 122px;
+  left: 285px;
+}
+
+.passport-line-issuer2 {
+  top: 163px;
+  left: 313px;
+}
+
+.passport-line-issued {
+  top: 244px;
+  left: 210px;
+}
+
+.passport-line-surname {
+  top: 602px;
+  left: 406px;
+  letter-spacing: 2px;
+}
+
+.passport-line-name {
+  top: 684px;
+  left: 343px;
+  letter-spacing: 2px;
+}
+
+.passport-line-middle {
+  top: 724px;
+  left: 396px;
+  letter-spacing: 2px;
+}
+
+.passport-line-birthdate {
+  top: 762px;
+  left: 456px;
+}
+
+.passport-line-birthplace {
+  top: 805px;
+  left: 357px;
+}
+
+/* блок со скриншотом DOM_JS */
+.passport-dom-title {
+  font-size: 24px;
+  margin: 40px 0 20px;
+  color: #ff7723;
+  text-align: center;
+}
+
+.passport-dom-info {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.passport-dom-image {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  border: 3px solid #1c1c1c;
+  border-radius: 4px;
+}
+.passport-code {
+  display: inline-block;
+  margin-left: 120px; /* расстояние между датой и кодом, как было через span-пробел */
+}
+/* =========================================================
+   АЛГОРИТМИЧЕСКАЯ ЗАДАЧА (СТРАНИЦА "ЗАДАЧА")
+   ========================================================= */
+
+.card {
+  background-color: #ffffff;
+  border: 3px solid #1c1c1c;
+  border-radius: 6px;
+  padding: 20px 24px;
+  margin-top: 20px;
+  box-shadow: 0 4px 0 #1c1c1c;
+}
+
+.task-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.task-inputs label {
+  font-size: 15px;
+  font-weight: bold;
+  color: #1c1c1c;
+}
+
+.task-inputs input {
+  width: 200px;
+  padding: 6px 8px;
+  border: 2px solid #1c1c1c;
+  border-radius: 4px;
+  background-color: #fff;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 15px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.task-inputs input:focus {
+  border-color: #ff7723;
+  box-shadow: 0 0 0 2px rgba(255, 119, 35, 0.25);
+}
+
+.task-result {
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+.task-result strong {
+  color: #ff7723;
+  font-weight: bold;
+}
+
+.small {
+  font-size: 13px;
+  color: #555;
+}

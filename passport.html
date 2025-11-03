@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Паспорт</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body id="top">
+    <!-- ШАПКА И МЕНЮ -->
+    <header class="header">
+      <div class="header-container">
+        <nav class="main-nav">
+          <ul class="main-menu">
+            <li class="main-menu-item">
+              <a class="main-menu-link" href="index.html" data-path="index.html"
+                >Главная</a
+              >
+            </li>
+            <li class="main-menu-item">
+              <a class="main-menu-link" href="page2.html" data-path="page2.html"
+                >Информация</a
+              >
+            </li>
+            <li class="main-menu-item">
+              <a class="main-menu-link" href="form1.html" data-path="form1.html"
+                >Контакты</a
+              >
+            </li>
+            <li class="main-menu-item">
+              <a class="main-menu-link" href="form2.html" data-path="form2.html"
+                >Отзывы</a
+              >
+            </li>
+            <li class="main-menu-item">
+              <a class="main-menu-link" href="task.html" data-path="task.html"
+                >Задача</a
+              >
+            </li>
+            <li class="main-menu-item">
+              <a
+                class="main-menu-link"
+                href="passport.html"
+                data-path="passport.html"
+                >Паспорт</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ОСНОВНОЙ КОНТЕНТ -->
+    <div class="page-container">
+      <h1 class="page-title">Паспорт</h1>
+
+      <!-- Кнопка "изменить язык" -->
+      <div class="passport-actions">
+        <button class="form-button passport-lang-btn" id="passportLangBtn">
+          Изменить язык
+        </button>
+      </div>
+
+      <!-- БЛОК ПАСПОРТА (фон + фото + текст поверх) -->
+      <div class="passport-container" id="passport-block">
+        <!-- фон паспорта -->
+        <img
+          class="passport-bg-image"
+          src="img/fon_pasport.jpg"
+          alt="Фон паспорта"
+        />
+
+        <!-- фото владельца -->
+        <img
+          class="passport-photo"
+          src="img/pass_photo.jpg"
+          alt="Фото владельца паспорта"
+        />
+
+        <!-- текст поверх паспорта -->
+        <div class="passport-overlay" id="pas">
+          <p class="passport-text passport-line-issuer1" id="issuer1">
+            МИНИСТЕРСТВО ИСКУССТВ
+          </p>
+          <p class="passport-text passport-line-issuer2" id="issuer2">
+            ГОРОДА ФИГЕРАС
+          </p>
+          <p class="passport-text passport-line-issued" id="issued">
+            11.05.1904<span class="passport-space"></span>1904-23
+          </p>
+          <p class="passport-text passport-line-surname" id="secondName">
+            ДАЛИ
+          </p>
+          <p class="passport-text passport-line-name" id="Name">САЛЬВАДОР</p>
+          <p class="passport-text passport-line-middle" id="middle">ДОМЕНЕК</p>
+          <p class="passport-text passport-line-birthdate" id="bd">
+            11.05.1904
+          </p>
+          <p class="passport-text passport-line-birthplace" id="birthPlace">
+            Г. ФИГЕРАС, ИСПАНИЯ
+          </p>
+        </div>
+      </div>
+
+      <!-- БЛОК СО СКРИНШОТОМ DOM_JS -->
+      <h1 class="passport-dom-title" id="screenshot-block">
+        DOM_JS. Считываем информацию из DOM
+      </h1>
+
+      <div class="passport-dom-info">
+        <img
+          src="img/DOM_screenshot.jpg"
+          alt="Достаём инфу из DOM"
+          class="passport-dom-image"
+        />
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

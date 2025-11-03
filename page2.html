@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Информация</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body id="top">
+<!-- ШАПКА И МЕНЮ -->
+<header class="header">
+  <div class="header-container">
+    <nav class="main-nav">
+      <ul class="main-menu">
+        <li class="main-menu-item">
+          <a class="main-menu-link" href="index.html" data-path="index.html">Главная</a>
+        </li>
+        <li class="main-menu-item">
+          <a class="main-menu-link" href="page2.html" data-path="page2.html">Информация</a>
+        </li>
+        <li class="main-menu-item">
+          <a class="main-menu-link" href="form1.html" data-path="form1.html">Контакты</a>
+        </li>
+        <li class="main-menu-item">
+          <a class="main-menu-link" href="form2.html" data-path="form2.html">Отзывы</a>
+        </li>
+        <li class="main-menu-item">
+          <a class="main-menu-link" href="task.html" data-path="task.html">Задача</a>
+        </li>
+        <li class="main-menu-item">
+          <a class="main-menu-link" href="passport.html" data-path="passport.html">Паспорт</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+    <!-- ОСНОВНОЙ КОНТЕНТ -->
+    <div class="page-container">
+      <h1 class="page-title">Информация</h1>
+
+      <p class="section-text">
+        На этой странице можно быстро перейти в наш Telegram-канал Belqite. Там
+        мы публикуем кейсы, визуальные исследования, вдохновляющие подборки и
+        разборы визуальной среды. Отсканируй QR-код или перейди по ссылке, чтобы
+        подписаться.
+      </p>
+
+      <!-- ТАБЛИЦА -->
+      <div class="table-block">
+        <table class="info-table">
+          <tr class="info-table-row">
+            <th class="info-table-head">QR-код</th>
+            <th class="info-table-head">Ссылка</th>
+            <th class="info-table-head">Описание</th>
+          </tr>
+
+          <tr class="info-table-row">
+            <td class="info-table-cell image-cell" style="text-align: center">
+              <!-- QR-код -->
+              <img
+                class="cell-image"
+                src="img/qr_telegram.jpg"
+                alt="QR-код Belqite Telegram"
+                width="120"
+                height="120"
+              />
+            </td>
+            <td class="info-table-cell link-cell">
+              <a
+                class="table-link"
+                href="https://t.me/belqite"
+                target="_blank"
+                rel="noopener"
+              >
+                Перейти в Telegram-канал Belqite
+              </a>
+            </td>
+            <td class="info-table-cell text-cell">
+              Наш Telegram — это медиа о визуальной культуре и дизайне.
+              Подписывайся, чтобы следить за исследованиями, кейсами и новыми
+              проектами Belqite.
+            </td>
+          </tr>
+        </table>
+      </div>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>

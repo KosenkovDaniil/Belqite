@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Контакты — Belqite</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body id="top">
+    <!-- ШАПКА И МЕНЮ -->
+    <header class="header">
+      <div class="header-container">
+        <nav class="main-nav">
+          <ul class="main-menu">
+            <li class="main-menu-item">
+              <a class="main-menu-link" href="index.html" data-path="index.html"
+                >Главная</a
+              >
+            </li>
+            <li class="main-menu-item">
+              <a class="main-menu-link" href="page2.html" data-path="page2.html"
+                >Информация</a
+              >
+            </li>
+            <li class="main-menu-item">
+              <a class="main-menu-link" href="form1.html" data-path="form1.html"
+                >Контакты</a
+              >
+            </li>
+            <li class="main-menu-item">
+              <a class="main-menu-link" href="form2.html" data-path="form2.html"
+                >Отзывы</a
+              >
+            </li>
+            <li class="main-menu-item">
+              <a class="main-menu-link" href="task.html" data-path="task.html"
+                >Задача</a
+              >
+            </li>
+            <li class="main-menu-item">
+              <a
+                class="main-menu-link"
+                href="passport.html"
+                data-path="passport.html"
+                >Паспорт</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- основной контент -->
+    <div class="page-container">
+      <h1 class="page-title">Связаться с Belqite</h1>
+
+      <p class="section-text">
+        Если вы хотите обсудить проект, предложить сотрудничество или задать
+        вопрос — просто заполните форму ниже. Мы всегда открыты к диалогу и
+        стараемся отвечать на письма в течение суток.
+      </p>
+
+      <form
+        class="contact-form"
+        action="https://httpbin.org/post"
+        method="post"
+      >
+        <div class="form-group">
+          <label class="form-label">Фамилия</label>
+          <input
+            class="form-input"
+            type="text"
+            name="lastname"
+            placeholder="Введите фамилию"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Имя</label>
+          <input
+            class="form-input"
+            type="text"
+            name="firstname"
+            placeholder="Введите имя"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Организация / проект</label>
+          <input
+            class="form-input"
+            type="text"
+            name="group"
+            placeholder="Например, кофе-точка или студия"
+          />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Телефон</label>
+          <input
+            class="form-input"
+            type="tel"
+            name="phone"
+            placeholder="+7 (___) ___-__-__"
+          />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Электронная почта</label>
+          <input
+            class="form-input"
+            type="email"
+            name="email"
+            placeholder="hello@belqite.com"
+          />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Дата отправки</label>
+          <input class="form-input" type="date" name="sent_date" />
+        </div>
+
+        <input type="hidden" name="source" value="belqite_contact_form" />
+
+        <div class="form-actions">
+          <button class="form-button" type="submit">Отправить</button>
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
