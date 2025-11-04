@@ -7,10 +7,10 @@ document.addEventListener('DOMContentLoaded', () => {
   links.forEach((link) => {
     const href = link.getAttribute('href').toLowerCase();
 
-    // сначала снимаем активность со всех
+    // сначала снимается активность со всех
     link.classList.remove('active');
 
-    // если путь совпадает — добавляем актив
+    // если путь совпадает — добавляется актив
     if (href === currentPage) {
       link.classList.add('active');
     }
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
-// passport.js — переключаем язык паспорта (Сальвадор Дали)
+// passport.js — переключается язык паспорта (Сальвадор Дали)
 
 document.addEventListener('DOMContentLoaded', function () {
   const langBtn = document.getElementById('passportLangBtn');
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const bdEl = document.getElementById('bd');
   const birthPlaceEl = document.getElementById('birthPlace');
 
-  // если какой-то из элементов не найден, прекращаем выполнение
+  // если какой-то из элементов не найден, прекращается выполнение
   if (
     !langBtn ||
     !issuer1El ||
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
     return;
   }
 
-  // ————— ДАННЫЕ НА КИРИЛЛИЦЕ —————
+  // ДАННЫЕ НА КИРИЛЛИЦЕ
   const passportCyr = {
     issuer1: 'МИНИСТЕРСТВО ИСКУССТВ',
     issuer2: 'ГОРОДА ФИГЕРАС',
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function () {
     birthPlace: 'Г. ФИГЕРАС, ИСПАНИЯ',
   };
 
-  // ————— ДАННЫЕ НА ЛАТИНИЦЕ / ИСПАНСКОМ —————
+  // ДАННЫЕ НА ЛАТИНИЦЕ / ИСПАНСКОМ
   const passportLat = {
     issuer1: 'MINISTERIO DE ARTE',
     issuer2: 'CIUDAD DE FIGUERAS',
@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function () {
     birthPlaceEl.textContent = data.birthPlace;
   }
 
-  // устанавливаем исходное состояние (русская версия)
+  // исходное состояние (русская версия)
   applyPassportData(passportCyr);
 
   // переключатель языка
@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function () {
     applyPassportData(isLatin ? passportLat : passportCyr);
   });
 });
-// ===== Алгоритмическая задача =====
+//  Алгоритмическая задача
 
 // Проверка условия A·√2 ≤ D
 function checkBeam(D, A) {
