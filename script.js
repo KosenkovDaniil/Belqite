@@ -54,8 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // ДАННЫЕ НА КИРИЛЛИЦЕ
   const passportCyr = {
     issuer1: 'МИНИСТЕРСТВО ИСКУССТВ',
-    issuer2: 'ГОРОДА ФИГЕРАС',
-    // ТЕПЕРЬ: текст + <span> с кодом, который будет childNodes[1]
+    issuer2: 'ГОРОДА ФИГЕРАС',   
     issued: '11.05.1904<span class="passport-code">1904-23</span>',
     secondName: 'ДАЛИ',
     name: 'САЛЬВАДОР',
