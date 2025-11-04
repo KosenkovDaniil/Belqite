@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function () {
   function applyPassportData(data) {
     issuer1El.textContent = data.issuer1;
     issuer2El.textContent = data.issuer2;
-    issuedEl.innerHTML = data.issued; // оставляем span
+    issuedEl.innerHTML = data.issued;
     secondNameEl.textContent = data.secondName;
     nameEl.textContent = data.name;
     middleEl.textContent = data.middle;
