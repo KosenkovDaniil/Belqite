@@ -1,158 +1,111 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Отзывы — Belqite</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
 
-  <body id="top">
-    <!-- ШАПКА И МЕНЮ -->
-    <header class="header">
-      <div class="header-container">
-        <nav class="main-nav">
-          <ul class="main-menu">
-            <li class="main-menu-item">
-              <a class="main-menu-link" href="index.html" data-path="index.html"
-                >Главная</a
-              >
-            </li>
-            <li class="main-menu-item">
-              <a class="main-menu-link" href="page2.html" data-path="page2.html"
-                >Информация</a
-              >
-            </li>
-            <li class="main-menu-item">
-              <a class="main-menu-link" href="form1.html" data-path="form1.html"
-                >Контакты</a
-              >
-            </li>
-            <li class="main-menu-item">
-              <a class="main-menu-link" href="form2.html" data-path="form2.html"
-                >Отзывы</a
-              >
-            </li>
-            <li class="main-menu-item">
-              <a class="main-menu-link" href="task.html" data-path="task.html"
-                >Задача</a
-              >
-            </li>
-            <li><a class="main-menu-link" href="gallery.html" data-path="gallery.html">Галерея</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <!-- основной контент -->
-    <div class="page-container">
-      <h1 class="page-title">Оставить отзыв или оформить заказ</h1>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Отзывы — Belqite</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-      <p class="section-text">
-        Здесь вы можете оформить заказ на креативную услугу или оставить отзыв о
-        работе Belqite. Все поля обязательны к заполнению, чтобы нам было проще
-        связаться и понять, чего вы хотите от мира визуала
-      </p>
+<body id="top">
+  <!-- ШАПКА И МЕНЮ -->
+  <header class="header">
+    <div class="header-container">
+      <nav class="main-nav">
+        <ul class="main-menu">
+          <li class="main-menu-item">
+            <a class="main-menu-link" href="index.html" data-path="index.html">Главная</a>
+          </li>
+          <li class="main-menu-item">
+            <a class="main-menu-link" href="page2.html" data-path="page2.html">Информация</a>
+          </li>
+          <li class="main-menu-item">
+            <a class="main-menu-link" href="form1.html" data-path="form1.html">Контакты</a>
+          </li>
+          <li class="main-menu-item">
+            <a class="main-menu-link" href="form2.html" data-path="form2.html">Отзывы</a>
+          </li>
+          <li class="main-menu-item">
+            <a class="main-menu-link" href="task.html" data-path="task.html">Задача</a>
+          </li>
 
-      <form class="review-form" action="https://httpbin.org/post" method="post">
-        <!-- название товара / темы -->
-        <div class="form-group">
-          <label class="form-label">Название услуги / темы</label>
-          <input
-            class="form-input"
-            type="text"
-            name="product"
-            value="Brand identity"
-            placeholder="Например, фирменный стиль или визуальная концепция"
-            required
-          />
-        </div>
-
-        <!-- количество -->
-        <div class="form-group">
-          <label class="form-label">Количество</label>
-          <input
-            class="form-input"
-            type="number"
-            name="amount"
-            value="1"
-            min="1"
-            required
-          />
-        </div>
-
-        <!-- способ оплаты -->
-        <fieldset class="form-fieldset">
-          <legend class="form-legend">Способ оплаты</legend>
-          <label class="form-option">
-            <input
-              class="form-radio"
-              type="radio"
-              name="payment"
-              value="card"
-              checked
-            />
-            Картой
-          </label>
-          <label class="form-option">
-            <input
-              class="form-radio"
-              type="radio"
-              name="payment"
-              value="cash"
-            />
-            Наличными
-          </label>
-        </fieldset>
-
-        <!-- опции -->
-        <fieldset class="form-fieldset">
-          <legend class="form-legend">Дополнительные опции</legend>
-          <label class="form-option">
-            <input
-              class="form-checkbox"
-              type="checkbox"
-              name="gift"
-              value="yes"
-              checked
-            />
-            Подарочная упаковка
-          </label>
-          <label class="form-option">
-            <input
-              class="form-checkbox"
-              type="checkbox"
-              name="call"
-              value="yes"
-            />
-            Позвонить перед отправкой
-          </label>
-        </fieldset>
-
-        <!-- дата -->
-        <div class="form-group">
-          <label class="form-label">Дата оформления</label>
-          <input class="form-input" type="date" name="date" />
-        </div>
-
-        <!-- пароль -->
-        <div class="form-group">
-          <label class="form-label">Пароль подтверждения</label>
-          <input
-            class="form-input"
-            type="password"
-            name="password"
-            value="secret123"
-          />
-        </div>
-
-        <input type="hidden" name="default_value" value="ok" />
-
-        <!-- кнопка -->
-        <div class="form-actions">
-          <button class="form-button" type="submit">Отправить</button>
-        </div>
-      </form>
+          <li><a class="main-menu-link" href="gallery.html" data-path="gallery.html">Галерея</a></li>
+        </ul>
+      </nav>
     </div>
-    <script src="script.js"></script>
-  </body>
+  </header>
+  <!-- основной контент -->
+  <div class="page-container">
+    <h1 class="page-title">Оставить отзыв или оформить заказ</h1>
+
+    <p class="section-text">
+      Здесь вы можете оформить заказ на креативную услугу или оставить отзыв о
+      работе Belqite. Все поля обязательны к заполнению, чтобы нам было проще
+      связаться и понять, чего вы хотите от мира визуала
+    </p>
+
+    <form class="review-form" action="https://httpbin.org/post" method="post">
+      <!-- название товара / темы -->
+      <div class="form-group">
+        <label class="form-label">Название услуги / темы</label>
+        <input class="form-input" type="text" name="product" value="Brand identity"
+          placeholder="Например, фирменный стиль или визуальная концепция" required />
+      </div>
+
+      <!-- количество -->
+      <div class="form-group">
+        <label class="form-label">Количество</label>
+        <input class="form-input" type="number" name="amount" value="1" min="1" required />
+      </div>
+
+      <!-- способ оплаты -->
+      <fieldset class="form-fieldset">
+        <legend class="form-legend">Способ оплаты</legend>
+        <label class="form-option">
+          <input class="form-radio" type="radio" name="payment" value="card" checked />
+          Картой
+        </label>
+        <label class="form-option">
+          <input class="form-radio" type="radio" name="payment" value="cash" />
+          Наличными
+        </label>
+      </fieldset>
+
+      <!-- опции -->
+      <fieldset class="form-fieldset">
+        <legend class="form-legend">Дополнительные опции</legend>
+        <label class="form-option">
+          <input class="form-checkbox" type="checkbox" name="gift" value="yes" checked />
+          Подарочная упаковка
+        </label>
+        <label class="form-option">
+          <input class="form-checkbox" type="checkbox" name="call" value="yes" />
+          Позвонить перед отправкой
+        </label>
+      </fieldset>
+
+      <!-- дата -->
+      <div class="form-group">
+        <label class="form-label">Дата оформления</label>
+        <input class="form-input" type="date" name="date" />
+      </div>
+
+      <!-- пароль -->
+      <div class="form-group">
+        <label class="form-label">Пароль подтверждения</label>
+        <input class="form-input" type="password" name="password" value="secret123" />
+      </div>
+
+      <input type="hidden" name="default_value" value="ok" />
+
+      <!-- кнопка -->
+      <div class="form-actions">
+        <button class="form-button" type="submit">Отправить</button>
+      </div>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+
 </html>
