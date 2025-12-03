@@ -4,484 +4,363 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: 'Helvetica Neue', Arial, sans-serif;
   background-color: #f6f6f6;
   color: #1c1c1c;
 }
-/* ШАПКА И МЕНЮ  */
+
+/* ШАПКА И МЕНЮ */
 .header {
   width: 100%;
   background-color: #ff7723;
-  border-bottom: 5px solid #1c1c1c;
-}
-/* контейнер внутри шапки */
-.header-container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 10px 0px;
+  border-bottom: 0.35vw solid #1c1c1c;
 }
 
-/* навигация по сайту */
+.header-container {
+  max-width: 76.39vw;
+  margin: 0 auto;
+  padding: 0.69vw 0;
+}
+
+/* НАВИГАЦИЯ */
 .main-nav {
   width: 100%;
 }
-/* список ссылок меню */
+
 .main-menu {
   list-style: none;
   display: flex;
-  gap: 50px;
+  gap: 3.47vw;
+  /* 50px */
   align-items: center;
 }
-/* ссылка в пункте меню */
+
 .main-menu-link {
   text-decoration: none;
-  font-size: 20px;
+  font-size: 1.39vw;
   font-weight: bold;
   color: #1c1c1c;
-  padding: 4px 0;
-  border-bottom: 2px solid transparent;
+  padding: 0.28vw 0;
+  border-bottom: 0.14vw solid transparent;
   transition: color 0.2s ease, border-color 0.2s ease;
 }
 
-/* hover по ссылке меню */
 .main-menu-link:hover {
   color: #ffffff;
 }
 
-/* ОСНОВНОЙ КОНТЕНТ */
+.main-menu-link.active {
+  color: #ffffff;
+  border-bottom: 0.21vw solid #1c1c1c;
+}
 
-/* контейнер всей страницы под шапкой */
+/* КОНТЕНТ */
 .page-container {
-  max-width: 1100px;
-  margin: 40px auto;
-  padding: 0 290px 0 40px;
+  max-width: 76.39vw;
+  margin: 2.78vw auto;
+  padding: 0 20.13vw 0 2.78vw;
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
 
-/* главный заголовок страницы */
 .page-title {
-  font-size: 35px;
-  margin-bottom: 20px;
+  font-size: 2.43vw;
+  margin-bottom: 1.39vw;
   color: #ff7723;
 }
 
-/* НАВИГАЦИЯ ПО СТРАНИЦЕ (внутри контента) */
-
-/* блок с "Навигация по странице" */
-.page-nav {
-  margin-bottom: 20px;
-  font-size: 14px;
-}
-
-/* текст "Навигация по странице:" */
-.page-nav-text {
-  font-weight: 500;
-  margin-right: 8px;
-}
-
-/* ссылки внутри блока навигации */
-.page-nav-link {
-  color: #1c1c1c;
-  text-decoration: none;
-  margin: 0 4px;
-}
-
-/* hover по ссылке навигации */
-.page-nav-link:hover {
-  text-decoration: underline;
-}
-
-/* разделитель "·" между ссылками */
-.page-nav-sep {
-  margin: 0 4px;
-  color: #777777;
-}
-
-/* ЗАГОЛОВКИ И ТЕКСТ */
-/* заголовки разделов */
+/* ЗАГОЛОВКИ, ТЕКСТ */
 .section-title {
-  font-size: 22px;
-  margin-top: 33px;
-  margin-bottom: 10px;
+  font-size: 1.53vw;
+  margin-top: 2.29vw;
+  margin-bottom: 0.69vw;
 }
 
-/* обычный абзац текста */
 .section-text {
-  font-size: 15px;
+  font-size: 1.04vw;
   line-height: 1.6;
-  margin-bottom: 14px;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
+  margin-bottom: 0.97vw;
 }
 
-/* пометка/примечание (маленький текст) */
 .section-text.note {
-  font-size: 13px;
-  color: #555555;
+  font-size: 0.90vw;
+  color: #555;
 }
 
-/* заголовок подраздела (списки) */
 .sub-title {
-  font-size: 18px;
-  margin-top: 33px;
-  margin-bottom: 8px;
+  font-size: 1.25vw;
+  margin-top: 2.29vw;
+  margin-bottom: 0.55vw;
 }
 
 /* СПИСКИ */
-/* базовый стиль для всех списков */
 .list {
-  font-size: 15px;
+  font-size: 1.04vw;
   line-height: 1.5;
-  margin-left: 20px;
-  margin-bottom: 16px;
+  margin-left: 1.39vw;
+  margin-bottom: 1.11vw;
 }
 
-/* ненумерованный список */
-.list-unordered {
-  list-style-type: disc;
-}
-
-/* нумерованный список */
-.list-ordered {
-  list-style-type: decimal;
-}
-
-/* верхний уровень вложенного списка */
-.list-nested {
-  list-style-type: disc;
-}
-
-/* внутренний ul внутри вложенного списка */
 .list-inner {
   list-style-type: circle;
-  margin-left: 20px;
-  margin-top: 10px;
+  margin-left: 1.39vw;
+  margin-top: 0.69vw;
 }
 
-/* один элемент списка */
 .list-item {
-  margin-bottom: 4px;
+  margin-bottom: 0.28vw;
 }
 
 /* МИНИАТЮРА */
-/* ссылка вокруг миниатюры */
 .thumb-link {
   display: inline-block;
-  margin-top: 15px;
+  margin-top: 1.04vw;
 }
-/* сама миниатюра */
+
 .thumb-image {
   display: block;
-  border: 2px solid #ff7723;
-  border-radius: 6px;
+  border: 0.14vw solid #ff7723;
+  border-radius: 0.42vw;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
 .thumb-image2 {
   display: block;
-  border: 2px solid #ff7723;
-  border-radius: 6px;
+  border: 0.14vw solid #ff7723;
+  border-radius: 0.42vw;
+  width: 34.72vw;
+  height: 26.39vw;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  width: 500px;
-  height: 380px;
 }
-/* hover по миниатюре */
+
+/* hover */
 .thumb-image:hover {
   transform: scale(1.2);
 }
-/* hover по миниатюре */
+
 .thumb-image2:hover {
   transform: scale(1.5);
 }
 
-/* БЛОК С ТАБЛИЦЕЙ (СТРАНИЦА "ИНФОРМАЦИЯ")*/
-/* обёртка вокруг таблицы, чтобы она не липла к другим блокам */
+/* БЛОК С ТАБЛИЦЕЙ*/
 .table-block {
-  margin-top: 24px;
-  margin-bottom: 24px;
-  overflow-x: auto; /* на всякий случай, если будет много колонок */
+  margin-top: 1.67vw;
+  margin-bottom: 1.67vw;
+  overflow-x: auto;
 }
-/* сама таблица */
+
 .info-table {
   width: 100%;
   border-collapse: collapse;
-  border: 2px solid #1c1c1c;
+  border: 0.14vw solid #1c1c1c;
   background: url('img/table_bg.jpg') center / cover no-repeat;
 }
+
 .info-table th,
 .info-table td {
-  border: 2px solid #1c1c1c; /* рамка у каждой ячейки */
-  padding: 12px 16px;
+  border: 0.14vw solid #1c1c1c;
+  padding: 0.83vw 1.11vw;
 }
-/* заголовки колонок */
+
 .info-table-head {
-  font-size: 15px;
+  font-size: 1.04vw;
   font-weight: 600;
   text-align: left;
-  padding: 12px 16px;
-  border-bottom: 2px solid #1c1c1c;
+  padding: 0.83vw 1.11vw;
+  border-bottom: 0.14vw solid #1c1c1c;
   background-color: rgba(246, 246, 246, 0.9);
 }
-/* обычная ячейка таблицы */
+
 .info-table-cell {
-  font-size: 14px;
+  font-size: 0.97vw;
   line-height: 1.5;
-  padding: 12px 16px;
-  border-bottom: 1px solid #dddddd;
+  padding: 0.83vw 1.11vw;
+  border-bottom: 0.07vw solid #ddd;
   vertical-align: top;
   color: #1c1c1c;
 }
+
+.image-cell {
+  text-align: center;
+  width: 9.72vw;
+}
+
+.link-cell {
+  width: 15.28vw;
+}
+
 /* ячейка с картинкой (QR) */
 .image-cell {
   text-align: center;
   width: 140px;
 }
+
 /* ячейка со ссылкой */
 .link-cell {
   width: 220px;
 }
-/* сам QR-код */
+
+/* сам QR-код / картинка внутри ячейки */
 .cell-image {
   display: inline-block;
-  border-radius: 10px;
-  border: 2px solid #ffffff;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+  border-radius: 0.69vw;
+  border: 0.14vw solid #fff;
+  box-shadow: 0 0.28vw 0.69vw rgba(0, 0, 0, 0.12);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* небольшой эффект при наведении на QR */
 .cell-image:hover {
   transform: scale(1.03);
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 0.42vw 0.97vw rgba(0, 0, 0, 0.18);
 }
 
-/* ссылка в таблице */
 .table-link {
   display: inline-block;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 0.97vw;
   font-weight: 500;
   color: #1c1c1c;
-  border-bottom: 1px solid transparent;
-  padding-bottom: 2px;
+  border-bottom: 0.07vw solid transparent;
+  padding-bottom: 0.14vw;
   transition: color 0.2s ease, border-color 0.2s ease;
 }
 
-/* hover по ссылке */
 .table-link:hover {
   color: #1c1c1c;
   border-color: #ff7723;
-  border-bottom-width: 3px;
+  border-bottom-width: 0.21vw;
 }
-/* ФОРМА КОНТАКТОВ (СТРАНИЦА "КОНТАКТЫ") */
+
+/*  ФОРМА КОНТАКТОВ (СТРАНИЦА "КОНТАКТЫ") */
 
 /* общая обёртка формы */
-.contact-form {
-  margin-top: 30px;
-  max-width: 600px; 
+.contact-form,
+.review-form {
+  margin-top: 2.08vw;
+  max-width: 41.67vw;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 1.11vw;
 }
 
-/* один блок "подпись + поле" */
 .form-group {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 0.42vw;
 }
 
-/* подпись к полю */
 .form-label {
-  font-size: 14px;
+  font-size: 0.97vw;
   font-weight: bold;
   letter-spacing: 0.02em;
 }
 
-/* само поле ввода */
 .form-input {
-  padding: 8px 10px;
-  font-size: 14px;
+  padding: 0.55vw 0.69vw;
+  font-size: 0.97vw;
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  border: 2px solid #1c1c1c;
-  border-radius: 4px;
+  border: 0.14vw solid #1c1c1c;
+  border-radius: 0.28vw;
   background-color: #ffffff;
   outline: none;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.1s ease;
+  transition: border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.1s ease;
 }
 
-/* placeholder — цвет бледнее */
 .form-input::placeholder {
-  color: #888888;
-  font-size: 13px;
+  color: #888;
+  font-size: 0.9vw;
 }
 
-/* фокус по полю */
 .form-input:focus {
   border-color: #ff7723;
-  box-shadow: 0 0 0 2px rgba(255, 119, 35, 0.25);
-  transform: translateY(-1px);
+  box-shadow: 0 0 0 0.14vw rgba(255, 119, 35, 0.25);
+  transform: translateY(-0.07vw);
 }
 
-/* блок с кнопкой */
+
 .form-actions {
-  margin-top: 10px;
+  margin-top: 0.69vw;
 }
 
-/* кнопка отправки */
 .form-button {
   display: inline-block;
-  padding: 10px 24px;
-  font-size: 14px;
+  padding: 0.69vw 1.67vw;
+  font-size: 0.97vw;
   font-weight: bold;
   font-family: 'Helvetica Neue', Arial, sans-serif;
   color: #1c1c1c;
   background-color: #ff7723;
-  border: 3px solid #1c1c1c;
-  border-radius: 4px;
+  border: 0.21vw solid #1c1c1c;
+  border-radius: 0.28vw;
   cursor: pointer;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  transition: background-color 0.2s ease, transform 0.1s ease,
+  transition: background-color 0.2s ease,
+    transform 0.1s ease,
     box-shadow 0.2s ease;
 }
 
 /* hover по кнопке */
 .form-button:hover {
   background-color: #ff9b57;
-  box-shadow: 0 4px 0 #1c1c1c;
-  transform: translateY(-2px);
+  box-shadow: 0 0.28vw 0 #1c1c1c;
+  transform: translateY(-0.14vw);
 }
 
-/* активное состояние (клик) */
 .form-button:active {
-  box-shadow: 0 1px 0 #1c1c1c;
+  box-shadow: 0 0.07vw 0 #1c1c1c;
   transform: translateY(0);
 }
+
 /* ФОРМА ОТЗЫВА / ЗАКАЗА (СТРАНИЦА "ОТЗЫВЫ") */
 
-/* общая обёртка формы с отзывом/заказом */
-.review-form {
-  margin-top: 30px;
-  max-width: 600px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-/* fieldset с выбором ответа */
+/* fieldset с радио и чекбоксами */
 .form-fieldset {
-  border: 2px solid #1c1c1c;
-  border-radius: 4px;
-  padding: 12px 14px 10px;
-  background-color: #ffffff;
+  border: 0.14vw solid #1c1c1c;
+  border-radius: 0.28vw;
+  padding: 0.83vw 0.97vw 0.69vw;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 0.55vw;
 }
 
-/* заголовок внутри fieldset */
 .form-legend {
-  font-size: 14px;
+  font-size: 0.97vw;
   font-weight: bold;
-  padding: 0 6px;
+  padding: 0 0.42vw;
 }
 
-/* одна опция */
 .form-option {
   display: flex;
   align-items: center;
-  gap: 8px;
-  font-size: 14px;
+  gap: 0.55vw;
+  font-size: 0.97vw;
 }
 
-/* radio-кнопки */
-.form-radio {
-  width: 16px;
-  height: 16px;
-  cursor: pointer;
-  accent-color: #ff7723;
-}
-
-/* сами чекбоксы */
+/* сами radio-кнопки */
+.form-radio,
 .form-checkbox {
-  width: 16px;
-  height: 16px;
+  width: 1.11vw;
+  height: 1.11vw;
   cursor: pointer;
   accent-color: #ff7723;
 }
 
-/* АКТИВНЫЙ ПУНКТ МЕНЮ */
-
-.main-menu-link.active {
-  color: #ffffff;
-  border-bottom: 3px solid #1c1c1c;
-}
-/* макет паспортной таблицы */
-.passport-table {
-  width: 425px;
-  background: url('img/fon_pasport.jpg') center / cover no-repeat;
-  border: none;
+.small {
+  font-size: 0.9vw;
+  color: #555;
 }
 
-/* заголовок "Российская Федерация" */
-.passport-header {
-  text-align: center;
-  height: 50px;
-  font-weight: bold;
-}
-
-/* ячейка "Паспорт выдан" */
-.passport-issued {
-  vertical-align: top;
-  text-align: left;
-  height: 200px;
-}
-
-/* строка с местом выдачи */
-.passport-issued-place {
-  text-align: center;
-  margin-top: 10px;
-}
-
-/* маленькие правые ячейки с номером паспорта */
-.passport-small-cell {
-  text-align: center;
-}
-
-/* ячейка с датой выдачи */
-.passport-date {
-  vertical-align: top;
-  height: 200px;
-}
-
-/* ячейка с кодом подразделения */
-.passport-code {
-  vertical-align: top;
-  height: 200px;
-}
-
-/* пустая ячейка снизу слева */
-.passport-empty {
-  height: 200px;
-}
-
-/* подпись "Личный код" */
-.passport-label {
-  vertical-align: middle;
-}
-/* убираем линии только в таблице паспорта */
-.passport-table,
-.passport-table td,
-.passport-table th {
-  border: none !important;
-}
-/* НОВЫЙ МАКЕТ ПАСПОРТА (с кнопкой "Изменить язык") */
+/* ПАСПОРТ */
 
 .passport-actions {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 1.39vw;
+  margin-bottom: 1.39vw;
 }
 
 .passport-lang-btn {
@@ -491,34 +370,31 @@ body {
 /* контейнер всего блока паспорта */
 .passport-container {
   position: relative;
-  width: 800px;
+  width: 55.56vw;
   max-width: 100%;
-  margin: 0 auto 40px;
+  margin: 0 auto 2.78vw;
 }
 
-/* фон паспорта */
 .passport-bg-image {
   display: block;
   width: 100%;
   height: auto;
-  border: 3px solid #1c1c1c;
-  border-radius: 4px;
+  border: 0.21vw solid #1c1c1c;
+  border-radius: 0.28vw;
 }
 
-/* фото владельца */
 .passport-photo {
   position: absolute;
-  top: 636px;
-  left: 48px;
-  width: 200px;
-  height: 260px;
+  top: 44.17vw;
+  left: 3.33vw;
+  width: 13.89vw;
+  height: 18.06vw;
   object-fit: cover;
-  border: 3px solid #1c1c1c;
-  border-radius: 4px;
+  border: 0.21vw solid #1c1c1c;
+  border-radius: 0.28vw;
   background-color: #ffffff;
 }
 
-/* слой с текстом поверх фона */
 .passport-overlay {
   position: absolute;
   top: 0;
@@ -528,131 +404,133 @@ body {
   pointer-events: none;
 }
 
-/* общий стиль текста паспорта */
 .passport-text {
   position: absolute;
   margin: 0;
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  font-size: 18px;
+  font-size: 1.25vw;
   color: #1c1c1c;
 }
 
-/* пробел между датой и кодом */
 .passport-space {
   display: inline-block;
-  width: 120px;
+  width: 8.33vw;
 }
 
 .passport-line-issuer1 {
-  top: 122px;
-  left: 285px;
+  top: 8.47vw;
+  left: 19.79vw;
 }
 
 .passport-line-issuer2 {
-  top: 163px;
-  left: 313px;
+  top: 11.32vw;
+  left: 21.74vw;
 }
 
 .passport-line-issued {
-  top: 244px;
-  left: 210px;
+  top: 16.94vw;
+  left: 14.58vw;
 }
 
 .passport-line-surname {
-  top: 602px;
-  left: 406px;
-  letter-spacing: 2px;
+  top: 41.81vw;
+  left: 28.19vw;
+  letter-spacing: 0.14vw;
 }
 
 .passport-line-name {
-  top: 684px;
-  left: 343px;
-  letter-spacing: 2px;
+  top: 47.50vw;
+  left: 23.82vw;
+  letter-spacing: 0.14vw;
 }
 
 .passport-line-middle {
-  top: 724px;
-  left: 396px;
-  letter-spacing: 2px;
+  top: 50.28vw;
+  left: 27.50vw;
+  letter-spacing: 0.14vw;
 }
 
 .passport-line-birthdate {
-  top: 762px;
-  left: 456px;
+  top: 52.92vw;
+  left: 31.67vw;
 }
 
 .passport-line-birthplace {
-  top: 805px;
-  left: 357px;
+  top: 55.90vw;
+  left: 24.79vw;
 }
 
 /* блок со скриншотом DOM_JS */
 .passport-dom-title {
-  font-size: 24px;
-  margin: 40px 0 20px;
+  font-size: 1.67vw;
+  margin: 2.78vw 0 1.39vw;
   color: #ff7723;
   text-align: center;
 }
 
 .passport-dom-info {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 2.78vw;
 }
 
 .passport-dom-image {
   display: inline-block;
   max-width: 100%;
   height: auto;
-  border: 3px solid #1c1c1c;
-  border-radius: 4px;
+  border: 0.21vw solid #1c1c1c;
+  border-radius: 0.28vw;
 }
+
 .passport-code {
   display: inline-block;
-  margin-left: 120px;
+  margin-left: 8.33vw;
 }
+
 /* АЛГОРИТМИЧЕСКАЯ ЗАДАЧА */
 
 .card {
   background-color: #ffffff;
-  border: 3px solid #1c1c1c;
-  border-radius: 6px;
-  padding: 20px 24px;
-  margin-top: 20px;
-  box-shadow: 0 4px 0 #1c1c1c;
+  border: 0.21vw solid #1c1c1c;
+  border-radius: 0.42vw;
+  padding: 1.39vw 1.67vw;
+  margin-top: 1.39vw;
+  box-shadow: 0 0.28vw 0 #1c1c1c;
 }
 
 .task-inputs {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  margin-bottom: 20px;
+  gap: 0.69vw;
+  margin-bottom: 1.39vw;
 }
 
+
 .task-inputs label {
-  font-size: 15px;
+  font-size: 1.04vw;
   font-weight: bold;
   color: #1c1c1c;
 }
 
+
 .task-inputs input {
-  width: 200px;
-  padding: 6px 8px;
-  border: 2px solid #1c1c1c;
-  border-radius: 4px;
+  width: 13.89vw;
+  padding: 0.42vw 0.56vw;
+  border: 0.14vw solid #1c1c1c;
+  border-radius: 0.28vw;
   background-color: #fff;
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  font-size: 15px;
+  font-size: 1.04vw;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .task-inputs input:focus {
   border-color: #ff7723;
-  box-shadow: 0 0 0 2px rgba(255, 119, 35, 0.25);
+  box-shadow: 0 0 0 0.14vw rgba(255, 119, 35, 0.25);
 }
 
 .task-result {
-  margin-top: 15px;
-  font-size: 15px;
+  margin-top: 1.04vw;
+  font-size: 1.04vw;
 }
 
 .task-result strong {
@@ -661,6 +539,286 @@ body {
 }
 
 .small {
-  font-size: 13px;
+  font-size: 0.90vw;
   color: #555;
+}
+
+/* ГАЛЕРЕЯ */
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.08vw;
+  margin-top: 2.08vw;
+}
+
+.gallery-card {
+  background-color: #ffffff;
+  border: 0.21vw solid #1c1c1c;
+  border-radius: 0.42vw;
+  padding: 0.69vw;
+  box-shadow: 0 0.28vw 0 #1c1c1c;
+  transition: transform 0.2s ease;
+}
+
+.gallery-card:hover {
+  transform: translateY(-0.35vw);
+}
+
+
+.gallery-card img {
+  width: 100%;
+  height: 18.06vw;
+  object-fit: cover;
+  border: 0.21vw solid #1c1c1c;
+  border-radius: 0.28vw;
+}
+
+.gallery-card h3 {
+  margin-top: 0.69vw;
+  font-size: 1.25vw;
+  color: #ff7723;
+}
+
+.gallery-card .author {
+  font-size: 1.04vw;
+  color: #333;
+}
+
+/* АДАПТИВЫ. 1200px — маленький десктоп / большой планшет */
+@media (max-width: 1200px) {
+
+  .header-container,
+  .page-container {
+    max-width: 90vw;
+    margin: 2.08vw auto;
+    padding: 0 3.47vw;
+  }
+
+  .main-menu {
+    gap: 2.78vw;
+  }
+
+  .main-menu-link {
+    font-size: 1.25vw;
+  }
+
+  .page-title {
+    font-size: 2.5vw;
+  }
+
+  .section-title {
+    font-size: 1.8vw;
+  }
+
+  .section-text {
+    font-size: 1.2vw;
+  }
+
+  .contact-form,
+  .review-form {
+    max-width: 55vw;
+  }
+
+  .card {
+    max-width: 55vw;
+    margin: 2.08vw auto 0;
+  }
+}
+
+/* 992px — планшеты */
+@media (max-width: 992px) {
+
+  .header-container,
+  .page-container {
+    max-width: 96vw;
+    padding: 0 2.78vw;
+    margin: 2.08vw auto;
+  }
+
+  .main-menu {
+    gap: 2.08vw;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .main-menu-link {
+    font-size: 2vw;
+  }
+
+  .page-title {
+    font-size: 3vw;
+    text-align: center;
+  }
+
+  .section-title {
+    font-size: 2.2vw;
+  }
+
+  .section-text {
+    font-size: 1.6vw;
+  }
+
+  .contact-form,
+  .review-form {
+    max-width: 70vw;
+  }
+
+  .card {
+    max-width: 70vw;
+  }
+
+  /* Галерея */
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.08vw;
+  }
+
+  .gallery-card img {
+    height: 26vw;
+  }
+}
+
+/* 768px — телефоны / маленькие планшеты */
+@media (max-width: 768px) {
+  .header {
+    border-bottom-width: 0.69vw;
+  }
+
+  .header-container,
+  .page-container {
+    max-width: 100vw;
+    margin: 2.08vw auto;
+    padding: 0 4vw;
+  }
+
+  .main-menu {
+    gap: 3vw;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .main-menu-link {
+    font-size: 3.5vw;
+    padding: 0.7vw 0;
+  }
+
+  .page-title {
+    font-size: 5vw;
+    margin-bottom: 4vw;
+    text-align: center;
+  }
+
+  .section-title {
+    font-size: 4vw;
+  }
+
+  .section-text {
+    font-size: 3.2vw;
+  }
+
+  .contact-form,
+  .review-form {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .form-input,
+  .form-button {
+    width: 100%;
+  }
+
+  .card {
+    max-width: 100%;
+    margin-top: 4vw;
+    padding: 4vw;
+  }
+
+  /* Галерея: одна колонка */
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 4vw;
+    margin-top: 4vw;
+  }
+
+  .gallery-card {
+    padding: 2.5vw;
+  }
+
+  .gallery-card img {
+    height: 50vw;
+  }
+
+  .gallery-card h3 {
+    font-size: 4vw;
+  }
+
+  .gallery-card .author {
+    font-size: 3.2vw;
+  }
+
+  .passport-container {
+    width: 94vw;
+    margin: 0 auto 6vw;
+  }
+
+  .passport-bg-image {
+    border-width: 0.69vw;
+  }
+
+  .passport-photo {
+    border-width: 0.69vw;
+  }
+
+  .passport-text {
+    font-size: 2.8vw;
+  }
+}
+
+/* 480px — маленькие телефоны */
+@media (max-width: 480px) {
+
+  .header-container,
+  .page-container {
+    padding: 0 4.5vw;
+  }
+
+  .main-menu {
+    gap: 2.5vw;
+  }
+
+  .main-menu-link {
+    font-size: 4vw;
+  }
+
+  .page-title {
+    font-size: 6vw;
+  }
+
+  .section-text {
+    font-size: 3.6vw;
+  }
+
+  /* Галерея: компактные карточки */
+  .gallery-card img {
+    height: 55vw;
+  }
+
+  .form-label {
+    font-size: 3.3vw;
+  }
+
+  .form-input {
+    font-size: 3.4vw;
+    padding: 2.2vw 2.5vw;
+  }
+
+  .form-button {
+    font-size: 3.4vw;
+    padding: 2.5vw 0;
+  }
+
+  .passport-text {
+    font-size: 3.4vw;
+  }
 }
